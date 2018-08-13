@@ -1,6 +1,3 @@
-env:
-  - github_token=rBrT0xHFc1noqvJoSHbiew
-
 # Clean and don't fail
 install:
   - rm -rf public || exit 0
