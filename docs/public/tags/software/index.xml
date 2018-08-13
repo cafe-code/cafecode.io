@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Minimalist Programmer - Kevin Guay</title>
+    <link>https://www.minimalistprogrammer.io/tags/software/</link>
+    <description>Recent content in Software on Minimalist Programmer - Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+        <atom:link href="https://www.minimalistprogrammer.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://www.minimalistprogrammer.io/blog/open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/open-source/</guid>
+      <description>Don&amp;rsquo;t get me wrong. I love open source software. Most of the servers that I run at work are CentOS (some RHEL and Fedora). These operating systems are phenomenal and the communty exceptional. We have a support agreement with RHEL, so I have access to their documentation, but 99% of the time Stack Exchange has the same information/solution. That is true for much of the open source software that I have used - great communities able and willing to help you in any way possible.</description>
+    </item>
+    
+  </channel>
+</rss>

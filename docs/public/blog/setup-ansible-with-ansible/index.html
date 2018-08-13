@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minimalist Programmer - Kevin Guay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Kevin Guay, Kevin, Guay, Kevin C Guay, minimalist, minimalist programmer, programmer, minimalistprogrammer, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science"/>
+    <meta name="description" content="The Minimalist Programmer is a blog covering dev-ops, software engineering, programming, IT, and more by Kevin Guay"/>
+    <meta name="author" content="Kevin Guay"/>
+    
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    
+    <link rel="stylesheet" href="/css/shoelace.css" type="text/css" media="screen"/>
+    
+    
+    <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109988049-1');
+    </script>
+    
+  </head>
+  <body id="index">
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="hidden-xs">
+      <div class="menu pull-right">
+        <a href="/about/">about</a>
+        <a href="/about/resume/">resume</a>
+        
+      </div>
+      <a href="/">
+        <div class="title">
+          <span style="font-weight:600;padding-right:3px;">minimalist</span>programmer
+        </div>
+      </a>
+    </div>
+    <div class="visible-xs">
+      <center style="margin-top:10px;">
+        <div class="menu pull-right">
+          <a href="/about/" style="margin-right:15px;margin-left:15px;">about</a>
+          <a href="/about/resume/" style="margin-right:15px;margin-left:15px;">resume</a>
+          
+        </div>
+        <a href="/" class="pull-left">
+          <div class="title"><span style="font-weight:600;padding-right:3px;">minimalist</span>programmer 
+          </div>
+        </a>
+      </center>
+    </div>
+    <hr class="top"/>
+  </div>
+  <div class="container-fluid">
+    
+  </div>
+</nav>
+    <div class="main">
+      <div id="main-container" class="container">
+        
+      
+       
+<div class="container">
+      
+  <h1 class="news-title">Setting Up Ansible with Ansible</h1>
+  <div class="date">Published on <span class="date-format">October 31, 2017</span> by Kevin Guay</div>
+      
+  <ul id="tags" class="hor-list">
+    
+    <li class="bubble green"><a href="/tags/ansible">Ansible</a></li>
+    
+  </ul>
+
+      
+  
+
+<h2 id="background">Background</h2>
+
+<p>I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually. I spend more time than I should ssh&rsquo;ing into boxes to add users. install applications, or restart services. I looked into Puppet a few months ago, but it seemed to complicated and clunky for my environment. Specialty, I really didn&rsquo;t want to install and troubleshoot the client on dozens of serveres. A few people had recommended Ansible to me, and it looked like a gerat option.
+<!-- more -->
+After waiting two months for the second edition to come out, I picked up a copy of Ansible Up &amp; Running by Lorin Hochstien and Rene Moser. Realizing that I wouldn&rsquo;t have time to read through the text at work, it became my nighttime reading. After only one chapter, I felt confident that it was the right choice for my current environment (~40 CentOS and RHEL virtual and physical machines.) It was easy to install on my mac using Homebrew and just as easy to start using. Best of all, I didn&rsquo;t have to ssh into every machine on the network to install a client, but I did need to create Ansible users on the machines.</p>
+
+<p>That meant, for 40+ servers, I needed to:
+ - create an ansible user
+ - add the user to wheel
+ - enable passwordless sudo for that user
+ - add a public key to the user&rsquo;s authorize_keys file</p>
+
+<p>That would have taken me at least a few hours and I would have probably misconfigured at least one of the servers. That was before Ansible. From what I had learned in the first chapter, I was able to use my current user account (in wheel) to run the needed configuration without manually logging into each machine.</p>
+
+<h2 id="here-s-how-i-did-it">Here&rsquo;s how I did it:</h2>
+
+<h3 id="configuration">Configuration:</h3>
+
+<p>In the configuration file (<code>ansible.cfg</code>), I set the remote user to myself, and instead of using a private key for authentication, I set the <code>ask_pass</code> flag to true. With this flag set, Ansible will prompt me for my password <em>once</em> when I run the playbook. I have also disabled host key checking (<code>host_key_checking = False</code>) to speed things up.</p>
+
+<pre><code class="language-ini">[defaults]
+inventory = hosts
+remote_user = kguay
+ask_pass = True
+host_key_checking = False
+ansible_port = 22
+</code></pre>
+
+<h3 id="playbook">Playbook:</h3>
+
+<p>Since we don&rsquo;t use passwordless sudo for anything other than Ansible, that line in the sudoers file was commented out. I used that comment in the regular expression (see last section below) to select the correct line in sudoers (if you don&rsquo;t use that comment in your RE, it will select the wrong line, enabling passwordless ssh for all users in wheel). Instead of setting it to <code>%wheel ALL=(ALL) NOPASSWD: ALL</code>, I specified the ansible user. As much as I dread typing in my password twice, it is worth it to prevent accidental sudo&rsquo;s.</p>
+
+<pre><code class="language-yaml">- name: Add users
+  hosts: all
+  become: True
+  tasks:
+    - group:
+        name: ansible
+        gid: 2000
+        state: present
+    
+    - user:
+        name: ansible
+        comment: &quot;Ansible&quot;
+        uid: 2000
+        group: ansible
+        groups: wheel
+    
+    - name: Set authorized key took from file
+      authorized_key:
+        user: ansible
+        state: present
+        key: &quot;{{ lookup('file', 'id-rsa.pub') }}&quot;
+    
+    - name: Allow 'wheel' group to have passwordless sudo
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^# %wheel'
+        line: '%ansible ALL=(ALL) NOPASSWD: ALL'
+</code></pre>
+
+<h3 id="running-the-playbook">Running the playbook:</h3>
+
+<p>When I run the playbook, I use the <code>--ask-become-pass</code> (<code>-K</code>) option to prompt the user for the sudo password. You should be prompted twice (once for the user password and once for the sudo password). In most cases these will be the same, but you still need to enter it twice.</p>
+
+<pre><code>$ ansible-playbook --ask-become-pass ansible_user.yml
+</code></pre>
+
+<p>You should get some output similar to:</p>
+
+<pre><code>$ ansible-playbook --ask-become-pass ansible_user.yml
+SSH password:
+SUDO password[defaults to SSH password]:
+
+PLAY [Add users] *****************************************
+
+TASK [Gathering Facts] ***********************************
+ok: [server1]
+ok: [server2]
+
+TASK [group] *********************************************
+ok: [server1]
+ok: [server2]
+
+TASK [user] **********************************************
+ok: [server1]
+ok: [server2]
+
+TASK [Set authorized key took from file] *****************
+ok: [server1]
+ok: [server2]
+
+TASK [Allow 'wheel' group to have passwordless sudo] *****
+changed: [server1]
+changed: [server2]
+
+PLAY RECAP ***********************************************
+server1   : ok=5    changed=1    unreachable=0    failed=0
+server2   : ok=5    changed=1    unreachable=0    failed=0
+</code></pre>
+
+<p>If you see a bunch of ok&rsquo;s, then you are done. You can log onto one of the servers to check that the ansible user has been created, is in wheel, and can sudo without a password.</p>
+
+<p>To start using the new ansible user account, you will need to edit the <em>third</em> and <em>fourth</em> line in your configuration file, <code>ansible.cfg</code>. On the <em>fourth</em> line, use the private key that corresponds to the public key that you used in your playbook (here, id-rsa):</p>
+
+<pre><code class="language-ini">[defaults]
+inventory = hosts
+remote_user = ansible
+private_key_file = id-rsa
+host_key_checking = False
+ansible_port = 22
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>While I have only scratched the surface of what Ansible can do, it is clearly as powerful as it is light weight. I can&rsquo;t wait to dive in an spend more time programming and less time managing servers!</p>
+
+<p>You can find all of the code in this post in a <a href="https://gist.github.com/kguay/7c3122aedb1b19eba69fc3fbe5c420de"> GitHub Gist</a>.</p>
+
+<!-- This code is available as a [Gist](https://gist.github.com/kguay/7c3122aedb1b19eba69fc3fbe5c420de). -->
+
+      
+  
+</div>
+     
+          </div>
+        </div>
+        
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs">
+        
+        <div style="color:#666;font-size:2em;margin-top:15px;margin-bottom:0;" class="title"><span style="font-weight:600;padding-right:3px;">kevin</span>guay</div>
+        <div style="color:#666;font-size:1.1em;margin-top:5px;" class="title">software engineer</div>
+      </div>
+      <div class="col-sm-4 col-md-2">
+        <div style="color:white;font-size:6em;margin-top:0;" class="title visible-xs pull-right"><span style="font-weight:600;padding-right:3px;">m</span>p</div>
+        <div class="heading white">Find Me</div>
+        <ul class="no-bull left">
+          <li> <a href="https://github.com/kguay" target="_blank">GitHub</a></li>
+          <li> <a href="https://www.linkedin.com/in/kevincguay/" target="_blank">LinkedIn</a></li>
+          <li> <a href="https://www.researchgate.net/profile/Kevin_Guay" target="_blank">ResearchGate</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-8 col-md-6">
+        <div class="heading white">Websites</div>
+        <ul class="no-bull left">
+          <li> <a href="https://www.finewoodworkingindex.com" target="_blank">Fine Woodworking Index</a></li>
+          
+          <li> <a href="/about/resume">Resume</a></li>
+        </ul>
+      </div>
+      
+      
+    </div>
+  </div>
+</footer>
+
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        
+        
+        
+        <script src="/js/color.js" type="text/javascript"></script>
+        <script src="/js/prism.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59ef333e58b3b003"></script>
+    </body>
+</html>
+
+

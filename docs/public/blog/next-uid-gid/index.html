@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minimalist Programmer - Kevin Guay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Kevin Guay, Kevin, Guay, Kevin C Guay, minimalist, minimalist programmer, programmer, minimalistprogrammer, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science"/>
+    <meta name="description" content="The Minimalist Programmer is a blog covering dev-ops, software engineering, programming, IT, and more by Kevin Guay"/>
+    <meta name="author" content="Kevin Guay"/>
+    
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    
+    <link rel="stylesheet" href="/css/shoelace.css" type="text/css" media="screen"/>
+    
+    
+    <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109988049-1');
+    </script>
+    
+  </head>
+  <body id="index">
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="hidden-xs">
+      <div class="menu pull-right">
+        <a href="/about/">about</a>
+        <a href="/about/resume/">resume</a>
+        
+      </div>
+      <a href="/">
+        <div class="title">
+          <span style="font-weight:600;padding-right:3px;">minimalist</span>programmer
+        </div>
+      </a>
+    </div>
+    <div class="visible-xs">
+      <center style="margin-top:10px;">
+        <div class="menu pull-right">
+          <a href="/about/" style="margin-right:15px;margin-left:15px;">about</a>
+          <a href="/about/resume/" style="margin-right:15px;margin-left:15px;">resume</a>
+          
+        </div>
+        <a href="/" class="pull-left">
+          <div class="title"><span style="font-weight:600;padding-right:3px;">minimalist</span>programmer 
+          </div>
+        </a>
+      </center>
+    </div>
+    <hr class="top"/>
+  </div>
+  <div class="container-fluid">
+    
+  </div>
+</nav>
+    <div class="main">
+      <div id="main-container" class="container">
+        
+      
+       
+<div class="container">
+      
+  <h1 class="news-title">Find the Next Available UID/GID</h1>
+  <div class="date">Published on <span class="date-format">June 1, 2018</span> by Kevin Guay</div>
+      
+  <ul id="tags" class="hor-list">
+    
+    <li class="bubble green"><a href="/tags/linux">Linux</a></li>
+    
+    <li class="bubble green"><a href="/tags/admin">Admin</a></li>
+    
+  </ul>
+
+      
+  
+
+<h2 id="new-user-accounts">New User Accounts</h2>
+
+<p>If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved. I am in the process of automating user creation with Ansible, but there is a road block that has been holding me back. Because we share home directories across systems, the user&rsquo;s uid and gid need to be the same on all of the servers in our environment (especially our hpc environment).</p>
+
+<p>In order to automatically creat accounts, I need to be able to quickly find the next available uid/gid in a particular range (in this case the 3000&rsquo;s; 3000-3999).</p>
+
+<h2 id="finding-the-next-available-uid-and-or-gid">Finding the next available UID and/or GID</h2>
+
+<p>To get started, I dump the user and group files to stdout. This provides all of the uid&rsquo;s (/etc/passwd) and gid&rsquo;s(/etc/group):</p>
+
+<pre><code>cat /etc/group /etc/passwd
+</code></pre>
+
+<p>Next, I pipe that output to the cut command which strips off everything except the uid (for /etc/passwd) and gid (for /etc/group):</p>
+
+<pre><code>cat /etc/group /etc/passwd | cut -d &quot;:&quot; -f 3
+</code></pre>
+
+<p>I then search for all numbers that are in the range 3000-3999 using a regular expression, <code>^3...$</code>. The <code>^</code> marks the start of the number so that it doesn&rsquo;t include (123000). The <code>.</code>&rsquo;s are wildcards and the <code>$</code> marks the end of the term.</p>
+
+<pre><code>cat /etc/group /etc/passwd | cut -d &quot;:&quot; -f 3 | grep &quot;^3...$&quot;
+</code></pre>
+
+<p>Now that we have all the numbers in our range, we need to find the highest value. To do that, I sort the list from low to high using <code>sort</code> and use tail -n 1 to get the last element (highest number).</p>
+
+<pre><code>cat /etc/group /etc/passwd | cut -d &quot;:&quot; -f 3 | grep &quot;^3...$&quot; | sort -n | tail -n 1
+</code></pre>
+
+<p>So we now have the largest uid and/or gid in our range. Since I like the uid to be the same as the gid, I don&rsquo;t care if I skip a gid or uid in this process, as long as it is not going to conflict with any existing id&rsquo;s.</p>
+
+<p>Lastely we need to increment the number by one. Like other things in linux, this is more difficult than it seems, but nonetheless we have the next uid and gid ready for user creation:</p>
+
+<pre><code>cat /etc/group /etc/passwd | cut -d &quot;:&quot; -f 3 | grep &quot;^3...$&quot; | sort -n | tail -n 1 | awk '{ print $1+1 }'
+</code></pre>
+
+      
+  
+</div>
+     
+          </div>
+        </div>
+        
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs">
+        
+        <div style="color:#666;font-size:2em;margin-top:15px;margin-bottom:0;" class="title"><span style="font-weight:600;padding-right:3px;">kevin</span>guay</div>
+        <div style="color:#666;font-size:1.1em;margin-top:5px;" class="title">software engineer</div>
+      </div>
+      <div class="col-sm-4 col-md-2">
+        <div style="color:white;font-size:6em;margin-top:0;" class="title visible-xs pull-right"><span style="font-weight:600;padding-right:3px;">m</span>p</div>
+        <div class="heading white">Find Me</div>
+        <ul class="no-bull left">
+          <li> <a href="https://github.com/kguay" target="_blank">GitHub</a></li>
+          <li> <a href="https://www.linkedin.com/in/kevincguay/" target="_blank">LinkedIn</a></li>
+          <li> <a href="https://www.researchgate.net/profile/Kevin_Guay" target="_blank">ResearchGate</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-8 col-md-6">
+        <div class="heading white">Websites</div>
+        <ul class="no-bull left">
+          <li> <a href="https://www.finewoodworkingindex.com" target="_blank">Fine Woodworking Index</a></li>
+          
+          <li> <a href="/about/resume">Resume</a></li>
+        </ul>
+      </div>
+      
+      
+    </div>
+  </div>
+</footer>
+
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        
+        
+        
+        <script src="/js/color.js" type="text/javascript"></script>
+        <script src="/js/prism.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59ef333e58b3b003"></script>
+    </body>
+</html>
+
+

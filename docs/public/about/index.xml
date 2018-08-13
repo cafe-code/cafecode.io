@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minimalist Programmer - Kevin Guay</title>
+    <link>https://www.minimalistprogrammer.io/about/</link>
+    <description>Recent content on Minimalist Programmer - Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+        <atom:link href="https://www.minimalistprogrammer.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/about/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/about/library/</guid>
+      <description> Library There is little more relaxing than curling up in a comfortable chair and reading a great book. Here is a breif list of books that I am currently reading and my favorites of all time.
+Books I&amp;rsquo;m reading now     Favorite books of all time   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/about/photography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/about/photography/</guid>
+      <description> Photography Between studying abroad in Australia/New Zeland and a once-in-a-lifetime safari in Tanzania, I have had some amazing opportunities to capture photographs. Here is a selection of my favorites.
+        $(&#34;.picture&#34;).click(function() { $(&#39;#full-img&#39;).attr(&#34;src&#34;, $(this).attr(&#34;src&#34;)); $(&#39;#myModal&#39;).modal(&#39;show&#39;) });  -- </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/about/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/about/portfolio/</guid>
+      <description> Graphic Design Portfolio Here are some examples of my graphic design work.
+         </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/about/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/about/resume/</guid>
+      <description>.bot-marg-10 { margin-bottom: 0px !important; } h2 { margin-top: 20px !important; }   professional experience  Bigelow Laboratory for Ocean Sciences Director of IT 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/about/woodworking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/about/woodworking/</guid>
+      <description>Woodworking -- I have been working with wood since I was a kid, but recently I dove head first into fine woodworking and furnituremaking. I particularly enjoy building shaker-style and shaker-influlenced furniture. The design philosophy of &amp;ldquo;form follows function&amp;rdquo; resonates with me.
+I discovered Fine Woodworking Magazine at my local library and started ingesting the information one issue at a time. I discovered that by reading so much about how to build fine furniture, that I skipped right over the not-so-fine furniture that many people start with.</description>
+    </item>
+    
+  </channel>
+</rss>

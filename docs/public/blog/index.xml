@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Minimalist Programmer - Kevin Guay</title>
+    <link>https://www.minimalistprogrammer.io/blog/</link>
+    <description>Recent content in Blogs on Minimalist Programmer - Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.minimalistprogrammer.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Find the Next Available UID/GID</title>
+      <link>https://www.minimalistprogrammer.io/blog/next-uid-gid/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/next-uid-gid/</guid>
+      <description>New User Accounts If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved. I am in the process of automating user creation with Ansible, but there is a road block that has been holding me back. Because we share home directories across systems, the user&amp;rsquo;s uid and gid need to be the same on all of the servers in our environment (especially our hpc environment).</description>
+    </item>
+    
+    <item>
+      <title>Hugo: HTML code in content files</title>
+      <link>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</guid>
+      <description>TL;DR You can use HTML in Hugo content files (markdown files) by including some (any) markdown code at the top of the page (e.g. an empty header #).
+Background I recently switched this website&amp;rsquo;s backend to Hugo instead of HarpJS. I have been using HarpJS for two years and love it. It is a very minimal static website compiler that has support for some great languages, including Pug (formerly Jade), Sass/Less, as well as the usual suspects, including HTML (EJS) and Markdown.</description>
+    </item>
+    
+    <item>
+      <title>Ansible OS Distribution and Version</title>
+      <link>https://www.minimalistprogrammer.io/blog/ansible-os-version/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/ansible-os-version/</guid>
+      <description>The Gist Ansible has built-in &amp;ldquo;facts&amp;rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address. This is great for debugging or inventorying systems, however OS version is not included and it was surprisingly difficult to find a way to print this information out. I understand that Ansible is OS-independant (and hence OS-version-independant), however, it can be useful to know which servers are running CentOS/RH 6 vs 7.</description>
+    </item>
+    
+    <item>
+      <title>Mounting CIFS in CentOS 7</title>
+      <link>https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/</guid>
+      <description>The Problem Most of my servers (virtual machines) are running CentOS 6, but the new ones run CentOS 7. This morning I setup a new CentOS 7 box and was trying to mount a CIFS storage share to it. I copied the line in /etc/fstab that mounts the share, created the secure credentials file, and the mount directory. However, when I ran mount /mnt/share it failed with the following error:</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Ansible with Ansible</title>
+      <link>https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/</link>
+      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/</guid>
+      <description>Background I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually. I spend more time than I should ssh&amp;rsquo;ing into boxes to add users. install applications, or restart services. I looked into Puppet a few months ago, but it seemed to complicated and clunky for my environment. Specialty, I really didn&amp;rsquo;t want to install and troubleshoot the client on dozens of serveres.</description>
+    </item>
+    
+    <item>
+      <title>Favorite Open Source Projects</title>
+      <link>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</link>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</guid>
+      <description>Overview Open source projects are great in every way. Aside from being free, they offer programmers of all levels a chance to get some real world experience and contribute to the public domain. I am certainly guilty of using open source software and not contributing to it, but that is about to change.
+Below is an annotated list of my favorite open source projects. I will make an effort to update this list regularly.</description>
+    </item>
+    
+    <item>
+      <title>New Website and Blog</title>
+      <link>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</guid>
+      <description>It started with a book I have always loved book stores. From local mom &amp;amp; pop&amp;rsquo;s to Barns &amp;amp; Noble. I am also a huge fan of Amazon. Quite the dichotomy, huh? On a recent trip to Boston, I visited a brick and mortar Amazon Book Store. Problem solved. This was, hands down, the best (and probably smallest) book store that I have ever been to. The size forced the inventory to be highly curated, typically an extremely subjective process.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.minimalistprogrammer.io/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

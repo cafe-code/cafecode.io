@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="700" height="250" viewBox="0, 0, 700, 250">
+  <g id="Background">
+    <rect x="0" y="0" width="700" height="250" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Layer_1">
+    <text transform="matrix(-0.707, -0.707, 0.707, -0.707, 396.386, 89.5)">
+      <tspan x="-74.451" y="45.14" font-family="Georgia" font-size="150" fill="#989898">M</tspan>
+    </text>
+    <g>
+      <path d="M639.586,70.269 L551.664,158.191 C550.559,159.296 549.099,159.628 548.402,158.931 L515.569,126.097 C514.872,125.401 515.204,123.941 516.309,122.836 L604.231,34.913 C605.336,33.809 606.796,33.477 607.492,34.173 L640.326,67.007 C641.023,67.704 640.691,69.164 639.586,70.269 z" fill-opacity="0" stroke="#407EB4" stroke-width="9"/>
+      <path d="M632.336,158.051 L544.414,70.128 C543.309,69.023 542.977,67.563 543.674,66.867 L576.508,34.033 C577.204,33.337 578.664,33.668 579.769,34.773 L667.691,122.695 C668.796,123.8 669.128,125.26 668.431,125.957 L635.597,158.791 C634.901,159.487 633.441,159.156 632.336,158.051 z" fill-opacity="0" stroke="#7CA35B" stroke-width="9"/>
+      <path d="M633.454,81.669 L626.776,88.346 L620.468,82.037 L627.145,75.36 L633.454,81.669 z" fill="#407EB4"/>
+      <path d="M562.93,81.557 L556.249,88.237 L549.979,81.967 L556.659,75.286 L562.93,81.557 z" fill="#407EB4"/>
+    </g>
+    <g>
+      <path d="M334.716,88.791 L459.057,88.791 C460.619,88.791 461.886,89.59 461.886,90.574 L461.886,137.008 C461.886,137.993 460.619,138.791 459.057,138.791 L334.716,138.791 C333.153,138.791 331.886,137.993 331.886,137.008 L331.886,90.574 C331.886,89.59 333.153,88.791 334.716,88.791 z" fill-opacity="0" stroke="#407EB4" stroke-width="9"/>
+      <path d="M401.914,31.847 L401.914,156.188 C401.914,157.751 401.115,159.018 400.131,159.018 L353.696,159.018 C352.712,159.018 351.914,157.751 351.914,156.188 L351.914,31.847 C351.914,30.284 352.712,29.018 353.696,29.018 L400.131,29.018 C401.115,29.018 401.914,30.284 401.914,31.847 z" fill-opacity="0" stroke="#7CA35B" stroke-width="9"/>
+      <path d="M346.613,83.86 L356.056,83.86 L356.056,92.782 L346.613,92.782 L346.613,83.86 z" fill="#407EB4"/>
+      <path d="M396.402,133.807 L405.849,133.807 L405.849,142.675 L396.402,142.675 L396.402,133.807 z" fill="#407EB4"/>
+    </g>
+    <path d="M27.016,85.296 L151.357,85.296 C152.92,85.296 154.186,86.477 154.186,87.934 L154.186,156.657 C154.186,158.114 152.92,159.296 151.357,159.296 L27.016,159.296 C25.453,159.296 24.186,158.114 24.186,156.657 L24.186,87.934 C24.186,86.477 25.453,85.296 27.016,85.296 z" fill-opacity="0" stroke="#407EB4" stroke-width="9"/>
+    <path d="M246.186,38.973 L246.186,156.619 C246.186,158.097 245.053,159.296 243.655,159.296 L177.718,159.296 C176.32,159.296 175.186,158.097 175.186,156.619 L175.186,38.973 C175.186,37.494 176.32,36.296 177.718,36.296 L243.655,36.296 C245.053,36.296 246.186,37.494 246.186,38.973 z" fill-opacity="0" stroke="#7CA35B" stroke-width="9"/>
+    <path d="M35,103 L98,103" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M35,112.5 L58.5,112.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M35,127 L130,127" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M35,137.5 L136,137.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M35,147 L125,147" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,55.5 L235,55.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,65 L207.5,65" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,79.5 L230.186,79.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,90 L235,90" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,99.5 L237.5,99.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,109.5 L232.5,109.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,120 L237.5,120" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,129.5 L232.5,129.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,139.5 L232.5,139.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <path d="M184,149.5 L237.5,149.5" fill-opacity="0" stroke="#6A6A6A" stroke-width="5"/>
+    <text transform="matrix(1, 0, 0, 1, 152.036, 205)">
+      <tspan x="-135.036" y="10" font-family="Georgia" font-size="30" fill="#424242">Responsive design..</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 396.386, 205)">
+      <tspan x="-99.683" y="10" font-family="Georgia" font-size="30" fill="#424242">Is that an "M"?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 591.5, 205)">
+      <tspan x="-39.478" y="10" font-family="Georgia" font-size="30" fill="#424242">Done.</tspan>
+    </text>
+  </g>
+</svg>

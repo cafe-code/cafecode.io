@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="119" height="25" viewBox="0, 0, 119, 25">
+  <g id="Background">
+    <rect x="0" y="0" width="119" height="25" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Layer_1">
+    <g>
+      <path d="M107.71,1.387 L107.71,24.47 L6.5,24.47 C3.739,24.47 1.5,22.231 1.5,19.47 L1.5,6.387 C1.5,3.625 3.739,1.387 6.5,1.387 L107.71,1.387 z" fill="#FFFFFF"/>
+      <path d="M107.71,1.387 L107.71,24.47 L6.5,24.47 C3.739,24.47 1.5,22.231 1.5,19.47 L1.5,6.387 C1.5,3.625 3.739,1.387 6.5,1.387 L107.71,1.387 z" fill-opacity="0" stroke="#33691E" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 49.615, 12.776)">
+      <tspan x="-43.994" y="5.194" font-family="TimesNewRomanPSMT" font-size="16" fill="#33691E">Maine Street</tspan>
+    </text>
+    <g>
+      <path d="M113.36,1.387 C116.121,1.387 118.36,3.625 118.36,6.387 L118.36,19.47 C118.36,22.231 116.121,24.47 113.36,24.47 L94.109,24.47 L94.109,1.387 L113.36,1.387 z" fill="#33691E"/>
+      <path d="M113.36,1.387 C116.121,1.387 118.36,3.625 118.36,6.387 L118.36,19.47 C118.36,22.231 116.121,24.47 113.36,24.47 L94.109,24.47 L94.109,1.387 L113.36,1.387 z" fill-opacity="0" stroke="#33691E" stroke-width="1"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 105.735, 12.776)">
+      <tspan x="-10.26" y="5.226" font-family="TimesNewRomanPSMT" font-size="16" fill="#FFFFFF">C</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 110.438, 10.5)">
+      <tspan x="-4" y="4.5" font-family="TimesNewRomanPSMT" font-size="16" fill="#FFFFFF">o</tspan>
+    </text>
+    <path d="M107.593,17.102 L114.648,17.102" fill-opacity="0" stroke="#FFFFFF" stroke-width="0.5"/>
+  </g>
+</svg>

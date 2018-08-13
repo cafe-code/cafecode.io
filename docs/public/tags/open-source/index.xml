@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on Minimalist Programmer - Kevin Guay</title>
+    <link>https://www.minimalistprogrammer.io/tags/open-source/</link>
+    <description>Recent content in Open Source on Minimalist Programmer - Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.minimalistprogrammer.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Favorite Open Source Projects</title>
+      <link>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</link>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</guid>
+      <description>Overview Open source projects are great in every way. Aside from being free, they offer programmers of all levels a chance to get some real world experience and contribute to the public domain. I am certainly guilty of using open source software and not contributing to it, but that is about to change.
+Below is an annotated list of my favorite open source projects. I will make an effort to update this list regularly.</description>
+    </item>
+    
+  </channel>
+</rss>

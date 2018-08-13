@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Minimalist Programmer - Kevin Guay</title>
+    <link>https://www.minimalistprogrammer.io/tags/website/</link>
+    <description>Recent content in Website on Minimalist Programmer - Kevin Guay</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.minimalistprogrammer.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Website and Blog</title>
+      <link>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</guid>
+      <description>It started with a book I have always loved book stores. From local mom &amp;amp; pop&amp;rsquo;s to Barns &amp;amp; Noble. I am also a huge fan of Amazon. Quite the dichotomy, huh? On a recent trip to Boston, I visited a brick and mortar Amazon Book Store. Problem solved. This was, hands down, the best (and probably smallest) book store that I have ever been to. The size forced the inventory to be highly curated, typically an extremely subjective process.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+baseURL = "https://www.cafecode.io/"
+languageCode = "en-us"
+title = "Cafe Code"
+theme = "minimal"
+disqusShortname = "kevinguay"
+googleAnalytics = "UA-109988049-1"
+
+[params]
+  subtitle = "Cafe Code"
+  author = "Bigelow Laboratory"

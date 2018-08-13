@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="648" height="648" viewBox="0, 0, 648, 648">
+  <g id="Background">
+    <rect x="0" y="0" width="648" height="648" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <path d="M0,-0 L216,-0 L216,36 L0,36 L0,-0 z" fill="#7C0A02"/>
+    <path d="M216,0 L360,0 L360,36 L216,36 L216,0 z" fill="#AC422B"/>
+    <path d="M360,0 L504,0 L504,36 L360,36 L360,0 z" fill="#C37D71"/>
+    <path d="M504,0 L648,0 L648,36 L504,36 L504,0 z" fill="#CE948C"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 22)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.barn-red</tspan>
+    </text>
+    <path d="M0,36 L216,36 L216,72 L0,72 L0,36 z" fill="#A31502"/>
+    <path d="M216,36 L360,36 L360,72 L216,72 L216,36 z" fill="#D36A4D"/>
+    <path d="M360,36 L504,36 L504,72 L360,72 L360,36 z" fill="#DC9584"/>
+    <path d="M504,36 L648,36 L648,72 L504,72 L504,36 z" fill="#E6B5A6"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 58)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.salem-red</tspan>
+    </text>
+    <path d="M0,72 L216,72 L216,108 L0,108 L0,72 z" fill="#D69463"/>
+    <path d="M216,72 L360,72 L360,108 L216,108 L216,72 z" fill="#DEA573"/>
+    <path d="M360,72 L504,72 L504,108 L360,108 L360,72 z" fill="#E7BDA5"/>
+    <path d="M504,72 L648,72 L648,108 L504,108 L504,72 z" fill="#F7C6A5"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 94)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.salmon</tspan>
+    </text>
+    <path d="M0,108 L216,108 L216,144 L0,144 L0,108 z" fill="#C8760B"/>
+    <path d="M216,108 L360,108 L360,144 L216,144 L216,108 z" fill="#EEAA40"/>
+    <path d="M360,108 L504,108 L504,144 L360,144 L360,108 z" fill="#EDBA78"/>
+    <path d="M504,108 L648,108 L648,144 L504,144 L504,108 z" fill="#F1C996"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 130)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.pumpkin</tspan>
+    </text>
+    <path d="M0,144 L216,144 L216,180 L0,180 L0,144 z" fill="#EFB10E"/>
+    <path d="M216,144 L360,144 L360,180 L216,180 L216,144 z" fill="#F9D066"/>
+    <path d="M360,144 L504,144 L504,180 L360,180 L360,144 z" fill="#F4D081"/>
+    <path d="M504,144 L648,144 L648,180 L504,180 L504,144 z" fill="#FDE7AE"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 166)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.marigold</tspan>
+    </text>
+    <path d="M0,180 L216,180 L216,216 L0,216 L0,180 z" fill="#D1A113"/>
+    <path d="M216,180 L360,180 L360,216 L216,216 L216,180 z" fill="#EFC346"/>
+    <path d="M360,180 L504,180 L504,216 L360,216 L360,180 z" fill="#F4D081"/>
+    <path d="M504,180 L648,180 L648,216 L504,216 L504,180 z" fill="#F1D79B"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 202)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.mustard</tspan>
+    </text>
+    <path d="M0,216 L216,216 L216,252 L0,252 L0,216 z" fill="#888036"/>
+    <path d="M216,216 L360,216 L360,252 L216,252 L216,216 z" fill="#B6AB79"/>
+    <path d="M360,216 L504,216 L504,252 L360,252 L360,216 z" fill="#C7BE97"/>
+    <path d="M504,216 L648,216 L648,252 L504,252 L504,216 z" fill="#CFCBAE"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 238)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.bayberry-green</tspan>
+    </text>
+    <path d="M0,252 L216,252 L216,288 L0,288 L0,252 z" fill="#81965D"/>
+    <path d="M216,252 L360,252 L360,288 L216,288 L216,252 z" fill="#9DB28A"/>
+    <path d="M360,252 L504,252 L504,288 L360,288 L360,252 z" fill="#AFC2A2"/>
+    <path d="M504,252 L648,252 L648,288 L504,288 L504,252 z" fill="#C8D4BC"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 274)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.tavern-green</tspan>
+    </text>
+    <path d="M0,288 L216,288 L216,324 L0,324 L0,288 z" fill="#525D3A"/>
+    <path d="M216,288 L360,288 L360,324 L216,324 L216,288 z" fill="#969D8D"/>
+    <path d="M360,288 L504,288 L504,324 L360,324 L360,288 z" fill="#D0D2CA"/>
+    <path d="M504,288 L648,288 L648,324 L504,324 L504,288 z" fill="#E0E3E0"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 310)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.lexington-green</tspan>
+    </text>
+    <path d="M0,324 L216,324 L216,360 L0,360 L0,324 z" fill="#7E8782"/>
+    <path d="M216,324 L360,324 L360,360 L216,360 L216,324 z" fill="#A5AEAD"/>
+    <path d="M360,324 L504,324 L504,360 L360,360 L360,324 z" fill="#B7BBBC"/>
+    <path d="M504,324 L648,324 L648,360 L504,360 L504,324 z" fill="#C6CBC7"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 346)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.sea-green</tspan>
+    </text>
+    <path d="M0,360 L216,360 L216,396 L0,396 L0,360 z" fill="#6F79AE"/>
+    <path d="M216,360 L360,360 L360,396 L216,396 L216,360 z" fill="#829ED0"/>
+    <path d="M360,360 L504,360 L504,396 L360,396 L360,360 z" fill="#95ABD1"/>
+    <path d="M504,360 L648,360 L648,396 L504,396 L504,360 z" fill="#BDCDE0"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 382)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.federal-blue</tspan>
+    </text>
+    <path d="M0,396 L216,396 L216,432 L0,432 L0,396 z" fill="#5C657E"/>
+    <path d="M216,396 L360,396 L360,432 L216,432 L216,396 z" fill="#7B91B1"/>
+    <path d="M360,396 L504,396 L504,432 L360,432 L360,396 z" fill="#9AACC0"/>
+    <path d="M504,396 L648,396 L648,432 L504,432 L504,396 z" fill="#B7C4CB"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 418)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.soldier-blue</tspan>
+    </text>
+    <path d="M0,432 L216,432 L216,468 L0,468 L0,432 z" fill="#9098A2"/>
+    <path d="M216,432 L360,432 L360,468 L216,468 L216,432 z" fill="#CCD4DC"/>
+    <path d="M360,432 L504,432 L504,468 L360,468 L360,432 z" fill="#D9DFE4"/>
+    <path d="M504,432 L648,432 L648,468 L504,468 L504,432 z" fill="#E2E6E8"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 454)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.slate</tspan>
+    </text>
+    <path d="M0,468 L216,468 L216,504 L0,504 L0,468 z" fill="#191011"/>
+    <path d="M216,468 L360,468 L360,504 L216,504 L216,468 z" fill="#4C5572"/>
+    <path d="M360,468 L504,468 L504,504 L360,504 L360,468 z" fill="#7D8392"/>
+    <path d="M504,468 L648,468 L648,504 L504,504 L504,468 z" fill="#838C9B"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 490)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.pitch-black</tspan>
+    </text>
+    <path d="M0,504 L216,504 L216,540 L0,540 L0,504 z" fill="#524229"/>
+    <path d="M216,504 L360,504 L360,540 L216,540 L216,504 z" fill="#9C844A"/>
+    <path d="M360,504 L504,504 L504,540 L360,540 L360,504 z" fill="#AC9D73"/>
+    <path d="M504,504 L648,504 L648,540 L504,540 L504,504 z" fill="#D6C6AD"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 526)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.driftwood</tspan>
+    </text>
+    <path d="M0,540 L216,540 L216,576 L0,576 L0,540 z" fill="#521000"/>
+    <path d="M216,540 L360,540 L360,576 L216,576 L216,540 z" fill="#B59C6B"/>
+    <path d="M360,540 L504,540 L504,576 L360,576 L360,540 z" fill="#DEC6AD"/>
+    <path d="M504,540 L648,540 L648,576 L504,576 L504,540 z" fill="#E6D6C6"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 562)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.chocolate-brown</tspan>
+    </text>
+    <path d="M0,576 L216,576 L216,612 L0,612 L0,576 z" fill="#DFD0A9"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 598)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#080808">.buttermilk</tspan>
+    </text>
+    <path d="M216,576 L432,576 L432,612 L216,612 L216,576 z" fill="#FFF8D6"/>
+    <text transform="matrix(1, 0, 0, 1, 330, 598)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#080808">.light-cream</tspan>
+    </text>
+    <path d="M432,576 L648,576 L648,612 L432,612 L432,576 z" fill="#E8E8E6"/>
+    <text transform="matrix(1, 0, 0, 1, 546, 598)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#080808">.oyster-white</tspan>
+    </text>
+    <path d="M0,612 L648,612 L648,648 L0,648 L0,612 z" fill="#F7F7F6"/>
+    <text transform="matrix(1, 0, 0, 1, 114, 634)">
+      <tspan x="-102" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#080808">.snow-white</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 22)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 22)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 22)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 58)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 58)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 58)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 94)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 94)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 94)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 130)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 130)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 130)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 166)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 166)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 166)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 202)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 202)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 202)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 238)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 238)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 238)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 274)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 274)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 274)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 310)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 310)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 310)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 346)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 346)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 346)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 382)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 382)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 382)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 418)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 418)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 418)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 454)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 454)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 454)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 490)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 490)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 490)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 526)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 526)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#FFFFFF">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 526)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 294, 562)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-50</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 438, 562)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-75</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 582, 562)">
+      <tspan x="-66" y="6" font-family="HelveticaNeue-Thin" font-size="25" fill="#323232">.white-90</tspan>
+    </text>
+  </g>
+</svg>

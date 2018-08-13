@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minimalist Programmer - Kevin Guay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Kevin Guay, Kevin, Guay, Kevin C Guay, minimalist, minimalist programmer, programmer, minimalistprogrammer, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science"/>
+    <meta name="description" content="The Minimalist Programmer is a blog covering dev-ops, software engineering, programming, IT, and more by Kevin Guay"/>
+    <meta name="author" content="Kevin Guay"/>
+    
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+    
+    <link rel="stylesheet" href="/css/shoelace.css" type="text/css" media="screen"/>
+    
+    
+    <link rel="stylesheet" href="/css/prism.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"/>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109988049-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109988049-1');
+    </script>
+    
+  </head>
+  <body id="index">
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="hidden-xs">
+      <div class="menu pull-right">
+        <a href="/about/">about</a>
+        <a href="/about/resume/">resume</a>
+        
+      </div>
+      <a href="/">
+        <div class="title">
+          <span style="font-weight:600;padding-right:3px;">minimalist</span>programmer
+        </div>
+      </a>
+    </div>
+    <div class="visible-xs">
+      <center style="margin-top:10px;">
+        <div class="menu pull-right">
+          <a href="/about/" style="margin-right:15px;margin-left:15px;">about</a>
+          <a href="/about/resume/" style="margin-right:15px;margin-left:15px;">resume</a>
+          
+        </div>
+        <a href="/" class="pull-left">
+          <div class="title"><span style="font-weight:600;padding-right:3px;">minimalist</span>programmer 
+          </div>
+        </a>
+      </center>
+    </div>
+    <hr class="top"/>
+  </div>
+  <div class="container-fluid">
+    
+  </div>
+</nav>
+    <div class="main">
+      <div id="main-container" class="container">
+        
+      
+       
+<div class="container">
+      
+  <h1 class="news-title">Mounting CIFS in CentOS 7</h1>
+  <div class="date">Published on <span class="date-format">November 20, 2017</span> by Kevin Guay</div>
+      
+  <ul id="tags" class="hor-list">
+    
+    <li class="bubble green"><a href="/tags/server">Server</a></li>
+    
+  </ul>
+
+      
+  
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>Most of my servers (virtual machines) are running CentOS 6, but the new ones run CentOS 7. This morning I setup a new CentOS 7 box and was trying to mount a CIFS storage share to it. I copied the line in <code>/etc/fstab</code> that mounts the share, created the secure credentials file, and the mount directory. However, when I ran <code>mount /mnt/share</code> it failed with the following error:</p>
+
+<pre><code>mount error(5): Input/output error
+Refer to the mount.cifs(8) manual page (e.g. man mount.cifs)
+</code></pre>
+
+<p>I checked, double checked, and rechecked every character in <code>/etc/fstab</code>. Everything was spot on. I was DuckDuckGoing the error message, cifs mounting instructions, /etc/fstab syntax, etc.. Nothing.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>It turns out that in CentOS 7, with cifs-utils 6.2 vs 4.8 in CentOS 6), you need to specify the security mode that you are using. In this case, I needed to add <code>sec=ntlm</code> to my mount command in <code>/etc/fstab</code>. The line ended up looking like:</p>
+
+<pre><code>//10.2.1.2	/mnt/share	cifs	credentials=/etc/samba/credentials/private,file_mode=0777,dir_mode=0777,sec=ntlm	0 0
+</code></pre>
+
+<p>According the to cifs-utils <a href="https://www.unix.com/man-page/debian/8/mount.cifs/">man page</a>, the default security mode is ntlm, so you shouldn&rsquo;t have to specify it. But you do. If you can provide any rhyme or reason, I&rsquo;d be interested.</p>
+
+<pre><code>sec=
+	Security mode. Allowed values are:
+	• none attempt to connection as a null user (no name)
+	• krb5 Use Kerberos version 5 authentication
+	• krb5i Use Kerberos authentication and forcibly enable packet signing
+	• ntlm Use NTLM password hashing (default)
+	• ntlmi Use NTLM password hashing and force packet signing
+	• ntlmv2 Use NTLMv2 password hashing
+	• ntlmv2i Use NTLMv2 password hashing and force packet signing
+	• ntlmssp Use NTLMv2 password hashing encapsulated in Raw NTLMSSP message
+	• ntlmsspi Use NTLMv2 password hashing encapsulated in Raw NTLMSSP message, and force packet signing
+</code></pre>
+
+      
+  
+</div>
+     
+          </div>
+        </div>
+        
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs">
+        
+        <div style="color:#666;font-size:2em;margin-top:15px;margin-bottom:0;" class="title"><span style="font-weight:600;padding-right:3px;">kevin</span>guay</div>
+        <div style="color:#666;font-size:1.1em;margin-top:5px;" class="title">software engineer</div>
+      </div>
+      <div class="col-sm-4 col-md-2">
+        <div style="color:white;font-size:6em;margin-top:0;" class="title visible-xs pull-right"><span style="font-weight:600;padding-right:3px;">m</span>p</div>
+        <div class="heading white">Find Me</div>
+        <ul class="no-bull left">
+          <li> <a href="https://github.com/kguay" target="_blank">GitHub</a></li>
+          <li> <a href="https://www.linkedin.com/in/kevincguay/" target="_blank">LinkedIn</a></li>
+          <li> <a href="https://www.researchgate.net/profile/Kevin_Guay" target="_blank">ResearchGate</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-8 col-md-6">
+        <div class="heading white">Websites</div>
+        <ul class="no-bull left">
+          <li> <a href="https://www.finewoodworkingindex.com" target="_blank">Fine Woodworking Index</a></li>
+          
+          <li> <a href="/about/resume">Resume</a></li>
+        </ul>
+      </div>
+      
+      
+    </div>
+  </div>
+</footer>
+
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        
+        
+        
+        <script src="/js/color.js" type="text/javascript"></script>
+        <script src="/js/prism.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59ef333e58b3b003"></script>
+    </body>
+</html>
+
+
