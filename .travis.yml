@@ -1,6 +1,6 @@
 # Clean and don't fail
 install:
-  - rm -rf public || exit 0
+  - rm -rf docs || exit 0
 
 # Build the website
 script:
@@ -11,7 +11,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: public
+  local_dir: docs
   github_token: $github_token
   on:
     branch: master
