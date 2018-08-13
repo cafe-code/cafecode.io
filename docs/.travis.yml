@@ -11,6 +11,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: public
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  github_token: rBrT0xHFc1noqvJoSHbiew # Set in travis-ci.org dashboard
   on:
     branch: master
