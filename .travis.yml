@@ -1,3 +1,6 @@
+env:
+  - github_token=rBrT0xHFc1noqvJoSHbiew
+
 # Clean and don't fail
 install:
   - rm -rf public || exit 0
@@ -12,6 +15,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: public
-  github_token: rBrT0xHFc1noqvJoSHbiew
+  github_token: $github_token
   on:
     branch: master
