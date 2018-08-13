@@ -5,7 +5,7 @@ install:
 # Build the website
 script:
   - cd hugo
-  - binaries/hugo --theme=minimal
+  - ../binaries/hugo
 
 # Deploy to GitHub pages
 deploy:
