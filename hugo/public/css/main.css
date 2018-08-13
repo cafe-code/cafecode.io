@@ -4,7 +4,8 @@ body {
   font-weight: 300;
   margin-bottom: 150px;
   letter-spacing: 1px;
-  color: #333; 
+  color: #6E2F00; 
+  background-color: #ECE4D8;
 }
 .container, .container-fluid {
   padding-left: 0;
@@ -52,9 +53,9 @@ h5 {
 
 /** Paragraph **/
 p {
-  color: #444;
+  color: #333;
   font-weight: 300;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 /** Links **/
@@ -62,13 +63,13 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #537FBC;
+  color: #6E2F00;
   text-decoration: none; 
 }
 
 /** mouse over link **/
 a:hover {
-  color: #444 !important; 
+  color: #003E6E !important; 
 }
 
 /** Code **/
@@ -118,7 +119,7 @@ code {
 }
 
 .menu {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-weight: 300;
   margin-top: 8px;
   font-size: 1.2em;
@@ -127,7 +128,7 @@ code {
 .menu a:visited,
 .menu a:hover,
 .menu a:active {
-  color: #444;
+  color: #6E2F00;
   text-decoration: none; 
 }
 @media (min-width: 768px) {
@@ -139,7 +140,7 @@ code {
   } 
 }
 .menu a:hover {
-  color: #444 !important;
+  color: #003E6E !important;
   text-decoration: underline; 
 }
 
@@ -182,7 +183,7 @@ a.navbar-header:hover {
 .navbar-default {
   background-color: rgba(0, 0, 0, 0) !important;
   border: none;
-  margin-top: 10px; 
+  margin-top: 0px; 
 }
 
 @media (max-width: 580px) {
@@ -439,9 +440,7 @@ ul.hor-list li:last-child:after {
 
 /** Footer **/
 footer {
-  background-color: white;
-  color: #666;
-  min-height: 200px;
+/*  min-height: 200px;*/
   bottom: 0;
   width: 100%;
   float: left;

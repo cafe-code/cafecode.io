@@ -3,7 +3,7 @@
   <head>
 	<meta name="generator" content="Hugo 0.31" />
     <meta charset="utf-8">
-    <title>Minimalist Programmer - Kevin Guay</title>
+    <title>Cafe Code</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Kevin Guay, Kevin, Guay, Kevin C Guay, minimalist, minimalist programmer, programmer, minimalistprogrammer, blog, minimalistblog, programmerblog, software development, software engineering, programming, it, information technology, maine, brunswick, boothbay, computing, resume, bio, personal, contact, Bigelow, Bigelow Laboratory for Ocean Science"/>
     <meta name="description" content="The Minimalist Programmer is a blog covering dev-ops, software engineering, programming, IT, and more by Kevin Guay"/>
@@ -31,16 +31,18 @@
   </head>
   <body id="index">
     <nav class="navbar navbar-default">
+  <a href="https://github.com/BigelowLab/cafecode.io" target="_blank" class="pull-right"><img src="/images/github.svg" width="150px"></a>
   <div class="container">
     <div class="hidden-xs">
       <div class="menu pull-right">
         <a href="/about/">about</a>
-        <a href="/about/resume/">resume</a>
+        <a href="/blog/">blog</a>
+        <a href="/about/contact/">contact</a>
         
       </div>
       <a href="/">
         <div class="title">
-          <span style="font-weight:600;padding-right:3px;">minimalist</span>programmer
+          <img src="/images/cafecode.svg" width="150px">
         </div>
       </a>
     </div>
@@ -48,16 +50,13 @@
       <center style="margin-top:10px;">
         <div class="menu pull-right">
           <a href="/about/" style="margin-right:15px;margin-left:15px;">about</a>
-          <a href="/about/resume/" style="margin-right:15px;margin-left:15px;">resume</a>
-          
+          <a href="/blog/" style="margin-right:15px;margin-left:15px;">blog</a>
+          <a href="/about/contact/" style="margin-right:15px;margin-left:15px;">contact</a>
         </div>
-        <a href="/" class="pull-left">
-          <div class="title"><span style="font-weight:600;padding-right:3px;">minimalist</span>programmer 
-          </div>
         </a>
       </center>
     </div>
-    <hr class="top"/>
+    
   </div>
   <div class="container-fluid">
     
@@ -67,92 +66,27 @@
       <div id="main-container" class="container">
         
       
-       
-<div class="container">
 
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/next-uid-gid/">Find the Next Available UID/GID</a></h1>
-  <div class="date">Published on <span class="date-format">June 1, 2018</span> by Kevin Guay</div>
-  
-  <ul id="tags" class="hor-list">
-    
-    <li class="bubble green"><a href="/tags/linux">Linux</a></li>
-    
-    <li class="bubble green"><a href="/tags/admin">Admin</a></li>
-    
-  </ul>
-  <br><br>
-  
-  New User Accounts If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved. I am in the process of automating user creation with Ansible, but there is a road block that has been holding me back. Because we share home directories across systems, the user&rsquo;s uid and gid need to be the same on all of the servers in our environment (especially our hpc environment).
-  <br><br> 
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/hugo-html-in-content/">Hugo: HTML code in content files</a></h1>
-  <div class="date">Published on <span class="date-format">January 18, 2018</span> by Kevin Guay</div>
-  
-  <ul id="tags" class="hor-list">
-    
-    <li class="bubble green"><a href="/tags/hugo">Hugo</a></li>
-    
-    <li class="bubble green"><a href="/tags/html">HTML</a></li>
-    
-  </ul>
-  <br><br>
-  
-  TL;DR You can use HTML in Hugo content files (markdown files) by including some (any) markdown code at the top of the page (e.g. an empty header #).
-Background I recently switched this website&rsquo;s backend to Hugo instead of HarpJS. I have been using HarpJS for two years and love it. It is a very minimal static website compiler that has support for some great languages, including Pug (formerly Jade), Sass/Less, as well as the usual suspects, including HTML (EJS) and Markdown.
-  <br><br> 
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/ansible-os-version/">Ansible OS Distribution and Version</a></h1>
-  <div class="date">Published on <span class="date-format">December 26, 2017</span> by Kevin Guay</div>
-  
-  <ul id="tags" class="hor-list">
-    
-    <li class="bubble green"><a href="/tags/ansible">Ansible</a></li>
-    
-    <li class="bubble green"><a href="/tags/html">HTML</a></li>
-    
-  </ul>
-  <br><br>
-  
-  The Gist Ansible has built-in &ldquo;facts&rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address. This is great for debugging or inventorying systems, however OS version is not included and it was surprisingly difficult to find a way to print this information out. I understand that Ansible is OS-independant (and hence OS-version-independant), however, it can be useful to know which servers are running CentOS/RH 6 vs 7.
-  <br><br> 
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/">Mounting CIFS in CentOS 7</a></h1>
-  <div class="date">Published on <span class="date-format">November 20, 2017</span> by Kevin Guay</div>
-  
-  <ul id="tags" class="hor-list">
-    
-    <li class="bubble green"><a href="/tags/server">Server</a></li>
-    
-  </ul>
-  <br><br>
-  
-  The Problem Most of my servers (virtual machines) are running CentOS 6, but the new ones run CentOS 7. This morning I setup a new CentOS 7 box and was trying to mount a CIFS storage share to it. I copied the line in /etc/fstab that mounts the share, created the secure credentials file, and the mount directory. However, when I ran mount /mnt/share it failed with the following error:
-  <br><br> 
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/">Setting Up Ansible with Ansible</a></h1>
-  <div class="date">Published on <span class="date-format">October 31, 2017</span> by Kevin Guay</div>
-  
-  <ul id="tags" class="hor-list">
-    
-    <li class="bubble green"><a href="/tags/ansible">Ansible</a></li>
-    
-  </ul>
-  <br><br>
-  
-  Background I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually. I spend more time than I should ssh&rsquo;ing into boxes to add users. install applications, or restart services. I looked into Puppet a few months ago, but it seemed to complicated and clunky for my environment. Specialty, I really didn&rsquo;t want to install and troubleshoot the client on dozens of serveres.
-  <br><br> 
-  
-  
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/">Favorite Open Source Projects</a></h1>
-  <div class="date">Published on <span class="date-format">October 30, 2017</span> by Kevin Guay</div>
-  
-  
-  <h1 class="news-title"><a href="https://www.minimalistprogrammer.io/blog/new-website-and-blog/">New Website and Blog</a></h1>
-  <div class="date">Published on <span class="date-format">October 15, 2017</span> by Kevin Guay</div>
-  
-  
+<div class="container">
+        
+
+
+  <div class="col-sm-12">
+    <h1>Hello World!</h1>
+
+<p>Welcome to Cafe Code.</p>
+
+<!-- <center>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="/images/code.svg" width="60%">
+    </div>
+    <div class="col-sm-4">
+      <img src="/images/slide.svg" width="60%">
+    </div>
+  </div>
+</center> -->
+  </div>
 
 </div>
      
@@ -161,32 +95,12 @@ Background I recently switched this website&rsquo;s backend to Hugo instead of H
         
         <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 hidden-xs">
-        
-        <div style="color:#666;font-size:2em;margin-top:15px;margin-bottom:0;" class="title"><span style="font-weight:600;padding-right:3px;">kevin</span>guay</div>
-        <div style="color:#666;font-size:1.1em;margin-top:5px;" class="title">software engineer</div>
-      </div>
-      <div class="col-sm-4 col-md-2">
-        <div style="color:white;font-size:6em;margin-top:0;" class="title visible-xs pull-right"><span style="font-weight:600;padding-right:3px;">m</span>p</div>
-        <div class="heading white">Find Me</div>
-        <ul class="no-bull left">
-          <li> <a href="https://github.com/kguay" target="_blank">GitHub</a></li>
-          <li> <a href="https://www.linkedin.com/in/kevincguay/" target="_blank">LinkedIn</a></li>
-          <li> <a href="https://www.researchgate.net/profile/Kevin_Guay" target="_blank">ResearchGate</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-8 col-md-6">
-        <div class="heading white">Websites</div>
-        <ul class="no-bull left">
-          <li> <a href="https://www.finewoodworkingindex.com" target="_blank">Fine Woodworking Index</a></li>
-          
-          <li> <a href="/about/resume">Resume</a></li>
-        </ul>
-      </div>
+    <center style="font-family:Arial;color:#666">
+      sponsored by
+      <br>
+      <a href="https://www.bigelow.org" target="_blank"><img src="/images/bigelow.svg"></a>
       
-      
-    </div>
+    </center>
   </div>
 </footer>
 

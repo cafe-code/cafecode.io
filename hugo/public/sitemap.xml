@@ -3,139 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/next-uid-gid/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/blog/setup-ansible-with-ansible/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</loc>
-    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/ansible-os-version/</loc>
-    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/</loc>
-    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/about/contact/</loc>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/</loc>
-    <lastmod>2017-10-31T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/contact/</loc>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</loc>
-    <lastmod>2017-10-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</loc>
-    <lastmod>2017-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/library/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/photography/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/portfolio/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/resume/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/about/woodworking/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/blog/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/admin/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/blog/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/tags/ansible/</loc>
-    <lastmod>2017-12-26T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/blog/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/tags/code/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.minimalistprogrammer.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/html/</loc>
-    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/hugo/</loc>
-    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/linux/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/open-source/</loc>
-    <lastmod>2017-10-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/server/</loc>
-    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.minimalistprogrammer.io/tags/website/</loc>
-    <lastmod>2017-10-15T00:00:00+00:00</lastmod>
+    <loc>https://www.cafecode.io/tags/</loc>
+    <lastmod>2018-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

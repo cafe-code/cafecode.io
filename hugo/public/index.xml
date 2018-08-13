@@ -1,145 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimalist Programmer - Kevin Guay</title>
-    <link>https://www.minimalistprogrammer.io/</link>
-    <description>Recent content on Minimalist Programmer - Kevin Guay</description>
+    <title>Cafe Code</title>
+    <link>https://www.cafecode.io/</link>
+    <description>Recent content on Cafe Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.minimalistprogrammer.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.cafecode.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Find the Next Available UID/GID</title>
-      <link>https://www.minimalistprogrammer.io/blog/next-uid-gid/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/next-uid-gid/</guid>
-      <description>New User Accounts If you manage multiple linux servers, you know that creating users can be quite a process, especially when mounting/unmounting home directories and setting up permissions is involved. I am in the process of automating user creation with Ansible, but there is a road block that has been holding me back. Because we share home directories across systems, the user&amp;rsquo;s uid and gid need to be the same on all of the servers in our environment (especially our hpc environment).</description>
-    </item>
     
     <item>
-      <title>Hugo: HTML code in content files</title>
-      <link>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</link>
-      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      <title>First Blog Post</title>
+      <link>https://www.cafecode.io/blog/setup-ansible-with-ansible/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/blog/hugo-html-in-content/</guid>
-      <description>TL;DR You can use HTML in Hugo content files (markdown files) by including some (any) markdown code at the top of the page (e.g. an empty header #).
-Background I recently switched this website&amp;rsquo;s backend to Hugo instead of HarpJS. I have been using HarpJS for two years and love it. It is a very minimal static website compiler that has support for some great languages, including Pug (formerly Jade), Sass/Less, as well as the usual suspects, including HTML (EJS) and Markdown.</description>
-    </item>
-    
-    <item>
-      <title>Ansible OS Distribution and Version</title>
-      <link>https://www.minimalistprogrammer.io/blog/ansible-os-version/</link>
-      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/ansible-os-version/</guid>
-      <description>The Gist Ansible has built-in &amp;ldquo;facts&amp;rdquo; about your hosts that make it easy to find basic information such as hostname, operating system, IP address. This is great for debugging or inventorying systems, however OS version is not included and it was surprisingly difficult to find a way to print this information out. I understand that Ansible is OS-independant (and hence OS-version-independant), however, it can be useful to know which servers are running CentOS/RH 6 vs 7.</description>
-    </item>
-    
-    <item>
-      <title>Mounting CIFS in CentOS 7</title>
-      <link>https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/</link>
-      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/mounting-cifs-in-centos-7/</guid>
-      <description>The Problem Most of my servers (virtual machines) are running CentOS 6, but the new ones run CentOS 7. This morning I setup a new CentOS 7 box and was trying to mount a CIFS storage share to it. I copied the line in /etc/fstab that mounts the share, created the secure credentials file, and the mount directory. However, when I ran mount /mnt/share it failed with the following error:</description>
-    </item>
-    
-    <item>
-      <title>Setting Up Ansible with Ansible</title>
-      <link>https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/</link>
-      <pubDate>Tue, 31 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/setup-ansible-with-ansible/</guid>
-      <description>Background I am responsible for a few dozen linux servers at work, and although there was an effort to install Salt a few years ago, they are all managed individually and manually. I spend more time than I should ssh&amp;rsquo;ing into boxes to add users. install applications, or restart services. I looked into Puppet a few months ago, but it seemed to complicated and clunky for my environment. Specialty, I really didn&amp;rsquo;t want to install and troubleshoot the client on dozens of serveres.</description>
-    </item>
-    
-    <item>
-      <title>Favorite Open Source Projects</title>
-      <link>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</link>
-      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/favorite-open-source-projects/</guid>
-      <description>Overview Open source projects are great in every way. Aside from being free, they offer programmers of all levels a chance to get some real world experience and contribute to the public domain. I am certainly guilty of using open source software and not contributing to it, but that is about to change.
-Below is an annotated list of my favorite open source projects. I will make an effort to update this list regularly.</description>
-    </item>
-    
-    <item>
-      <title>New Website and Blog</title>
-      <link>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/new-website-and-blog/</guid>
-      <description>It started with a book I have always loved book stores. From local mom &amp;amp; pop&amp;rsquo;s to Barns &amp;amp; Noble. I am also a huge fan of Amazon. Quite the dichotomy, huh? On a recent trip to Boston, I visited a brick and mortar Amazon Book Store. Problem solved. This was, hands down, the best (and probably smallest) book store that I have ever been to. The size forced the inventory to be highly curated, typically an extremely subjective process.</description>
+      <guid>https://www.cafecode.io/blog/setup-ansible-with-ansible/</guid>
+      <description>Hello World This is the first Cafe Code blog post!</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.minimalistprogrammer.io/about/library/</link>
+      <link>https://www.cafecode.io/about/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/about/library/</guid>
-      <description> Library There is little more relaxing than curling up in a comfortable chair and reading a great book. Here is a breif list of books that I am currently reading and my favorites of all time.
-Books I&amp;rsquo;m reading now     Favorite books of all time   </description>
+      <guid>https://www.cafecode.io/about/contact/</guid>
+      <description> Contact </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.minimalistprogrammer.io/about/photography/</link>
+      <link>https://www.cafecode.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.minimalistprogrammer.io/about/photography/</guid>
-      <description> Photography Between studying abroad in Australia/New Zeland and a once-in-a-lifetime safari in Tanzania, I have had some amazing opportunities to capture photographs. Here is a selection of my favorites.
-        $(&#34;.picture&#34;).click(function() { $(&#39;#full-img&#39;).attr(&#34;src&#34;, $(this).attr(&#34;src&#34;)); $(&#39;#myModal&#39;).modal(&#39;show&#39;) });  -- </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.minimalistprogrammer.io/about/portfolio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/about/portfolio/</guid>
-      <description> Graphic Design Portfolio Here are some examples of my graphic design work.
-         </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.minimalistprogrammer.io/about/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/about/resume/</guid>
-      <description>.bot-marg-10 { margin-bottom: 0px !important; } h2 { margin-top: 20px !important; }   professional experience  Bigelow Laboratory for Ocean Sciences Director of IT 2016 - present  Software Engineer 2015 - 2016  Woods Hole Research Center Research Assistant II 2014 - 2015  Research Assistant I 2012 - 2014  Woods Hole Oceanographic Institution Engineer Assistant II 2011     education  Hobart College B.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.minimalistprogrammer.io/about/woodworking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/about/woodworking/</guid>
-      <description>Woodworking -- I have been working with wood since I was a kid, but recently I dove head first into fine woodworking and furnituremaking. I particularly enjoy building shaker-style and shaker-influlenced furniture. The design philosophy of &amp;ldquo;form follows function&amp;rdquo; resonates with me.
-I discovered Fine Woodworking Magazine at my local library and started ingesting the information one issue at a time. I discovered that by reading so much about how to build fine furniture, that I skipped right over the not-so-fine furniture that many people start with.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.minimalistprogrammer.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.minimalistprogrammer.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.minimalistprogrammer.io/contact/</guid>
+      <guid>https://www.cafecode.io/contact/</guid>
       <description>Contact</description>
     </item>
     
