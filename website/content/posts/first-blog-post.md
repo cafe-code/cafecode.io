@@ -1,12 +1,12 @@
 +++
-title = "First Blog Post"
-date = "2018-08-13"
 author = "Kevin"
+date = "2018-08-13"
 description = "How to use Ansible for initial Ansible configuration"
-tags = [ "Code" ]
 layout = "blog"
-+++
+tags = ["Code"]
+title = "First Blog Post"
 
++++
 ## Hello World
 
 This is the first Cafe Code blog post!
