@@ -1,17 +1,17 @@
 # Clean and don't fail
 install:
-  - rm -rf hugo/public || exit 0
+  - rm -rf website/public || exit 0
 
 # Build the website
 script:
-  - cd hugo
+  - cd website
   - ../binaries/hugo
 
 # Deploy to GitHub pages
 deploy:
   provider: pages
   skip_cleanup: true
-  local_dir: hugo/public
+  local_dir: website/public
   github_token: $github_token
   on:
     branch: master
