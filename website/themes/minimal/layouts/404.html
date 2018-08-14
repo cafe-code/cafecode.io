@@ -1,19 +1,18 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
 
-    <div class="container">
+  <div class="container">
 
-        <h1>404 Error</h1>
-        <p>Maybe you want one of these?</p>
-
-        {{ range .Data.Pages }}
-        <ul>
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a><span class="lead">({{ .Date.Format "Mon, Jan 2, 2006" }})</span></li>
-        </ul>
-        {{ end }}
-
-        {{ partial "container-footer.html" . }}
-
-    </div>
+    <h1>Don't Panic! It's just a 404.</h1>
+    
+    <h2>Troubleshooting steps:</h2>
+    <ol>
+      <li>Take a deep breath</li>
+      <li>Take a sip of coffee</li>
+      <li>Look at the web address that you typed in</li>
+      <li>If it contains the characters "asdf", you probably wanted to see what this page looks like</li>
+      <li>Else, try clicking on a link in the top menu to navigate to a page that exists</li>
+    </ol>
+    
+  </div>
 
 {{ partial "footer.html" . }}
