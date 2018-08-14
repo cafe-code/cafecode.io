@@ -1,3 +1,5 @@
 # Menu
 
-Cafe Code was started in 2016 at Bigelow Laboratory for Ocean Sciences
+## Appetizer 
+
+- [Python for Beginners](https://www.python.org/about/gettingstarted/)
