@@ -3,7 +3,7 @@
   <!-- <a href="/blog/index.xml"><img src="/images/logo/rss-444.svg" style="height:20px; margin-left:4px; margin-bottom:3px"></a> -->
 </div>
 
-{{ range where .Site.Pages "Type" "programming" }}
+{{ range .Pages }}
 <div>
   <div style="margin-bottom:0"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
   <div style="margin-top:0;font-size:0.9em" class="date date-format">{{ .Date.Format "January 2, 2006" }}</div>
