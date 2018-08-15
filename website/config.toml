@@ -1,28 +1,22 @@
 baseURL = "https://cafecode.bigelow.org/"
-languageCode = "en-us"
-title = "Cafe Code"
-theme = "minimal"
 disqusShortname = "kevinguay"
 googleAnalytics = "UA-109988049-1"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-    weight = -120
-
-  [[menu.main]]
-    name = "test"
-    url = "/menu/"
-    weight = -110
-
-  [[menu.main]]
-    name = "blog"
-    url = "/posts/"
-    weight = -100
-    
+languageCode = "en-us"
+theme = "minimal"
+title = "Cafe Code"
+[[menu.main]]
+name = "blog"
+url = "/posts/"
+weight = 3
+[[menu.main]]
+name = "menu"
+url = "/menu/"
+weight = 2
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about/"
+weight = 1
 [params]
-  subtitle = "Cafe Code"
-  author = "Bigelow Laboratory"
-
+author = "Bigelow Laboratory"
+subtitle = "Cafe Code"
