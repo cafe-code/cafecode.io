@@ -1,11 +1,11 @@
 +++
-title = "Your Title"
-date = "2018-08-12"
 author = "Your name"
+date = "2018-08-12"
 description = "Your description"
-tags = [ "Your tag" ]
+draft = true
 layout = "blog"
+tags = ["Your tag"]
+title = "Your Title"
+
 +++
-
-
 Start typing here...
