@@ -143,6 +143,11 @@ code {
   color: #003E6E !important;
   text-decoration: underline; 
 }
+.menu .active a:link,
+.menu .active a:visited,
+.menu .active a:active {
+  text-decoration: underline; 
+}
 
 .bubble.green {
   background-color: white;

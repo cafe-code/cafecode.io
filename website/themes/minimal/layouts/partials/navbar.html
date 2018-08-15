@@ -2,12 +2,18 @@
   <a href="https://github.com/cafe-code" target="_blank" class="pull-right"><img src="/images/github.svg" width="150px"></a>
   <div class="container">
     <div class="hidden-xs">
-      <div class="menu pull-right">
+      <!-- <div class="menu pull-right">
         <a href="/about">about</a>
         <a href="/menu">menu</a>
         <a href="/posts/">blog</a>
-        <!-- <a href="/blog/">blog</a> -->
-      </div>
+      </div> -->
+      <nav class="menu pull-right">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          {{ end }}
+      </nav>
+      
       <a href="/">
         <div class="title">
           <img src="/images/cafecode.svg" width="150px">
