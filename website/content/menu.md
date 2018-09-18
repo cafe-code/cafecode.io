@@ -3,6 +3,7 @@
 ## Code Resources
 
 - [Python for Beginners](https://www.python.org/about/gettingstarted/)
+- [R Studio cheat sheets](https://www.rstudio.com/resources/cheatsheets/)
 
 ## TED talks
 
