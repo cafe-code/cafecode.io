@@ -9,4 +9,4 @@ title = "First Blog Post"
 +++
 ## Hello World
 
-This is the first Cafe Code blog post!
+This is the first Café Code blog post!
