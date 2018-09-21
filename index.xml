@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cafe Code</title>
+    <link>https://cafecode.bigelow.org/</link>
+    <description>Recent content on Cafe Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://cafecode.bigelow.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Summer 2018 Program</title>
+      <link>https://cafecode.bigelow.org/posts/2018.09.summerprogram/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cafecode.bigelow.org/posts/2018.09.summerprogram/</guid>
+      <description>For reference, here&amp;rsquo;s the approximate 2018 summer program. And because this is a place for geeky coding, I&amp;rsquo;m posting it as a self-contained [itty bitty site URL].</description>
+    </item>
+    
+    <item>
+      <title>Summer 2018 Wrap</title>
+      <link>https://cafecode.bigelow.org/posts/2018.09.summer/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cafecode.bigelow.org/posts/2018.09.summer/</guid>
+      <description>The second year of our summer Café Code program has just wrapped up. We ran a weekly ~1 hour discussion group all summer. Some of the highlights:
+&amp;ldquo;Learning that I can (and should) have tech discussions with folks outside computer science&amp;rdquo;
+&amp;ldquo;Being introduced to new softwares, languages and programs&amp;rdquo;
+&amp;ldquo;Discussions on ethics of machine learning&amp;rdquo;
+&amp;ldquo;[Café] code became my place of most comfort. Thank you very much for organizing it.&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cafecode.bigelow.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cafecode.bigelow.org/about/</guid>
+      <description>About Café Code Code and algorithms are now part of nearly every aspect of society and intersect with nearly all disciplines. We need a space to think and talk more broadly about coding. Café Code is a forum for talking about code, sharing useful tutorials and tools, helping each other with coding problems, and discussing the broader issues of coding in society
+Café Code was started in 2016 at Bigelow Laboratory for Ocean Sciences by Nick Record and Kevin Guay.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cafecode.bigelow.org/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cafecode.bigelow.org/contact/</guid>
+      <description> Contact </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cafecode.bigelow.org/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cafecode.bigelow.org/menu/</guid>
+      <description>Menu Code Resources  Python for Beginners R Studio cheat sheets Git primer Cheat sheet for Unix / Mac Cheat sheet for Windows command prompt / DOS  Videos and TED talks  The beauty of data visualization (David McCandless) The nightmare videos of children&amp;rsquo;s YouTube — and what&amp;rsquo;s wrong with the internet today (James Bridle) We&amp;rsquo;re building a dystopia just to make people click on ads (Zeynep Tufekci) Visualizing ourselves &amp;hellip; with crowd-sourced data (Aaron Koblin) What do we do with all this big data?</description>
+    </item>
+    
+  </channel>
+</rss>
