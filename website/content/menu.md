@@ -10,8 +10,7 @@
 
 ## Videos and TED talks
 
-- [AI Literacy, or Why Understanding AI Will Help You Every Day (Jordan Harrod)]
-(https://www.ted.com/talks/jordan_harrod_ai_literacy_or_why_understanding_ai_will_help_you_every_day)
+- [AI Literacy, or Why Understanding AI Will Help You Every Day (Jordan Harrod)](https://www.ted.com/talks/jordan_harrod_ai_literacy_or_why_understanding_ai_will_help_you_every_day)
 - [The beauty of data visualization (David McCandless)](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization#t-1074329)
 - [The nightmare videos of children's YouTube — and what's wrong with the internet today (James Bridle)](https://www.ted.com/talks/james_bridle_the_nightmare_videos_of_childrens_youtube_and_what_s_wrong_with_the_internet_today/transcript#t-504225)
 - [We're building a dystopia just to make people click on ads (Zeynep Tufekci)](https://www.bing.com/videos/search?view=detail&mid=C950DBDBE90B3AB3DB99C950DBDBE90B3AB3DB99&shtp=GetUrl&shid=22dfc0a0-77ea-45b6-a32c-978d50564734&shtk=WmV5bmVwIFR1ZmVrY2k6IFdlJ3JlIGJ1aWxkaW5nIGEgZHlzdG9waWEganVzdCB0byBtYWtlIHBlb3BsZSBjbGljayBvbiBhZHM%3D&shdk=V2UncmUgYnVpbGRpbmcgYW4gYXJ0aWZpY2lhbCBpbnRlbGxpZ2VuY2UtcG93ZXJlZCBkeXN0b3BpYSwgb25lIGNsaWNrIGF0IGEgdGltZSwgc2F5cyB0ZWNobm8tc29jaW9sb2dpc3QgWmV5bmVwIFR1ZmVja2kuIEluIGFuIGV5ZS1vcGVuaW5nIHRhbGssIHNoZSBkZXRhaWxzLi4u&shhk=G62bA%2BRlS8nr2u2mXhI1aMD3eXCmJhCcxfMRoVCdDK0%3D&form=VDSHOT&shth=OSH.z%252FBIZmplk%252BfGGU81Fql40g)
